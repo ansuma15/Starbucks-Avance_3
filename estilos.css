@@ -1,0 +1,132 @@
+/* =========================================
+   LOGIN Y REGISTRO
+========================================= */
+.contenedor-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: var(--fondo-claro);
+    min-height: calc(100vh - 200px); 
+}
+
+.tarjeta-formulario {
+    background-color: var(--blanco);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 500px;
+}
+
+.tarjeta-ancha {
+    max-width: 650px;
+}
+
+.tarjeta-formulario h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: var(--texto-oscuro);
+}
+
+.tarjeta-formulario > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.grupo-input {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-input label {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.grupo-input input {
+    padding: 0.9rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.grupo-input input:focus {
+    outline: none;
+    border-color: var(--verde-principal);
+    box-shadow: 0 0 0 2px rgba(0, 98, 65, 0.2);
+}
+
+.opciones-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.casilla-verificacion {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.pie-formulario {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.95rem;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+}
+
+.bloque-campos {
+    border: none;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.bloque-campos legend {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--verde-principal);
+    border-bottom: 2px solid var(--verde-claro);
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+.fila-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.texto-ayuda {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.4rem;
+}
+
+.terminos-condiciones {
+    margin-bottom: 1.5rem;
+}
+
+.opciones-terminos {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+@media (max-width: 600px) {
+    .fila-inputs {
+        grid-template-columns: 1fr;
+    }
+}
